@@ -83,24 +83,14 @@ git clone [repository-url]
 cd train-simulation-system
 ```
 
-2️⃣ **创建虚拟环境**
-```bash
-# 创建环境
-python -m venv venv
-
-# 激活环境
-## Windows
-venv\Scripts\activate
-## Linux/Mac
-source venv/bin/activate
-```
-
-3️⃣ **安装依赖**
+2️⃣  **安装依赖**
 ```bash
 pip install -r requirements.txt
 ```
 
 ## 🎮 使用指南
+
+对于exe版本的文件，直接双击运行即可，以下为源码版本的使用指南。
 
 ### 🔌 启动系统
 
@@ -239,5 +229,5 @@ TrainSimulation/
 ---
 
 <div align="center">
-<strong>Made with ❤️ by TongJi University</strong>
+<strong>Copyright © 2024 Chenkai Luo at Tongji University</strong>
 </div>
