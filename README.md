@@ -12,7 +12,7 @@
 [快速开始](#-快速开始) •
 [使用指南](#-使用指南) •
 [评价指标](#-评价指标) •
-[开发团队](#-开发团队) 
+[开发团队](#-开发团队)
 
 </div>
 
@@ -179,9 +179,27 @@ graph TD
     D --> D4[牵引特性曲线.xls]
 ```
 
+```
+TrainSimulation/
+├── TrainSimulation_App/        # 可执行文件目录
+│   ├── TrainEvaluator.exe     # 仿真驾驶评价软件
+│   ├── TrainSimulator.exe     # 列车驾驶仿真软件
+│   └── logs/                  # 仿真输出目录
+│       ├── *.png             # 速度曲线图
+│       ├── *.log             # 操作日志
+│       └── *.csv             # 运行数据
+│
+└── TrainSimulation_Code/       # 源代码目录
+    ├── evaluate.py            # 评价系统源码
+    ├── main.py               # 主程序
+    ├── gui.py                # 图形界面
+    ├── widgets.py            # 界面组件
+    ├── simulation.py         # 仿真逻辑
+    └── pid.py                # PID控制器
+```
+
 ## ⚠️ 注意事项
 
-- 🔵 评价系统必须先于仿真系统启动
 - 🔵 确保所有数据文件完整
 - 🔵 日志自动保存在logs目录
 - 🔵 支持CSV格式数据导出
